@@ -1,0 +1,31 @@
+@use 'stylesheets/main';
+
+.wrapper {
+	background-color: main.$color-gray-50;
+	padding: 12px 0;
+}
+
+.container {
+	@include main.flex;
+}
+
+.menu {
+	@include main.stack {
+		margin-left: 24px;
+	}
+
+	&_item {
+		color: main.$color-white;
+		text-transform: uppercase;
+		@include main.stack {
+			margin-left: 4px;
+		}
+	}
+}
+
+.btn {
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}

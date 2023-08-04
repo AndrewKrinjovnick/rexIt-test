@@ -1,0 +1,18 @@
+@use 'stylesheets/main';
+
+.wrapper {
+	position: relative;
+	padding: 4px 4px 0 0;
+}
+
+.amount {
+	width: 16px;
+	height: 16px;
+	@include main.flex(center, center);
+	position: absolute;
+	border-radius: 50%;
+	color: main.$color-white;
+	background-color: main.$color-red;
+	top: 0;
+	right: 0;
+}

@@ -1,0 +1,47 @@
+@use 'stylesheets/main';
+
+.menu_wrapper {
+	position: absolute;
+	z-index: main.$z-index-popup;
+}
+
+.overlay_wrapper {
+	background-color: transparent;
+}
+
+.menu_wrapper {
+	background-color: main.$color-white;
+	padding: 32px;
+	border-radius: 24px;
+	box-shadow: 0 0 16px rgba(main.$color-black, 0.2);
+
+	&.bottom {
+		margin-top: 20px;
+	}
+
+	&.top {
+		margin-bottom: 20px;
+	}
+}
+
+.tooltip_animation_enter {
+	opacity: 0;
+	transform: scale(0);
+
+	&_active {
+		transition:
+			opacity 0.3s ease-out,
+			transform 0.1s ease-in-out;
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.tooltip_animation_exit {
+	opacity: 1;
+
+	&_active {
+		transition: opacity 0.3s ease-out;
+		opacity: 0;
+	}
+}

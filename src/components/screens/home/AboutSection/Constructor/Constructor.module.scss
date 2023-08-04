@@ -1,0 +1,49 @@
+@use 'stylesheets/main';
+
+.wrapper {
+	@include main.flex(center, center, column);
+}
+
+.title {
+	color: main.$color-gray-100;
+	margin-bottom: 16px;
+}
+
+.value {
+	color: main.$color-gray-100;
+	@include main.stack {
+		margin-left: 4px;
+	}
+}
+
+.additives {
+	width: 100%;
+	margin-top: 40px;
+	@include main.stack(stretch, stretch, column) {
+		margin-top: 40px;
+	}
+}
+
+.additive {
+	@include main.stack {
+		margin-left: 24px;
+	}
+}
+
+.percent {
+	color: main.$color-gray-100;
+	width: 70px;
+	text-align: end;
+}
+
+.bottom {
+	@include main.flex;
+	margin-top: 40px;
+	width: 100%;
+}
+
+.options {
+	@include main.stack(flex-start) {
+		margin-left: 24px;
+	}
+}

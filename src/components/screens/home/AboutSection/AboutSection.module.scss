@@ -1,0 +1,46 @@
+@use 'stylesheets/main';
+
+.wrapper {
+	position: relative;
+	padding: 80px 0 140px;
+	background: no-repeat url('assets/main/about-bg.png');
+}
+
+.description_wrapper {
+	position: absolute;
+	width: 1273px;
+	height: 372px;
+	right: 0;
+	top: 174px;
+	background-color: main.$color-brown;
+}
+
+.description_container {
+	padding: 60px 0 60px 80px;
+	max-width: 793px;
+	position: relative;
+}
+
+.description_text {
+	color: main.$color-gray-100;
+}
+
+.logo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 40px;
+	transform: translateY(50%);
+}
+
+.top_container {
+	@include main.flex(space-between, stretch);
+	padding-bottom: 186px;
+}
+
+.title {
+	flex-grow: 1;
+	margin-left: 37px;
+	color: main.$color-gray-100;
+	text-transform: uppercase;
+}

@@ -1,0 +1,33 @@
+@use 'stylesheets/main';
+
+.additives {
+	display: grid;
+	grid-template-columns: 24px repeat(4, 32px) repeat(2, 80px) 28px;
+	gap: 24px;
+	margin-bottom: 12px;
+}
+
+.additives_icon {
+	@include main.flex(center, center);
+}
+
+.checkout {
+	@include main.flex(flex-end, center);
+	margin-top: 24px;
+
+	& .btn {
+		padding: 11px 24px;
+	}
+}
+
+.price {
+	@include main.stack(flex-start, center) {
+		margin-left: 4px;
+	}
+	color: main.$color-gray-100;
+	margin-right: 16px;
+}
+
+.total {
+	text-transform: uppercase;
+}

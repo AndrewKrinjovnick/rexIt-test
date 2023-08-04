@@ -1,0 +1,57 @@
+@use 'stylesheets/main';
+
+.footer {
+	background: no-repeat url('assets/footer_bg.jpg');
+	height: 788px;
+}
+
+.content_wrapper {
+	padding-top: 60px;
+	@include main.flex(space-between, stretch);
+}
+
+.tel,
+.content {
+	color: main.$color-white;
+}
+
+.tel {
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.map {
+	&:hover .content {
+		text-decoration: underline;
+	}
+}
+
+.socials {
+	margin-top: 8px;
+}
+
+.social {
+	@include main.flex(flex-start, center);
+	margin-bottom: 16px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&:hover .social_title {
+		text-decoration: underline;
+	}
+
+	.icon {
+		border-radius: 50%;
+		border: 1px solid rgba(main.$color-white, 0.2);
+		padding: 7px;
+		@include main.flex(center, center);
+	}
+
+	.social_title {
+		color: main.$color-white;
+		margin-left: 8px;
+	}
+}

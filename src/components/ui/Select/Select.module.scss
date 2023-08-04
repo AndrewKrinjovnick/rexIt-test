@@ -1,0 +1,35 @@
+@use 'stylesheets/main';
+
+.btn {
+	border: 2px solid main.$color-red;
+	background: transparent;
+	padding: 14px 30px;
+	border-radius: 90px;
+	text-transform: uppercase;
+	color: main.$color-red;
+	cursor: pointer;
+	min-width: 250px;
+
+	@include main.stack {
+		margin-left: 8px;
+	}
+}
+
+.menu {
+	padding: 0 12px;
+}
+
+.option {
+	padding: 12px 0 11px;
+	border-bottom: 1px solid main.$color-red;
+	min-width: 225px;
+	color: main.$color-red;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+
+	&:last-of-type {
+		border-bottom: none;
+		padding-bottom: 12px;
+	}
+}

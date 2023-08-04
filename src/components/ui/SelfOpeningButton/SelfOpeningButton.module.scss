@@ -1,0 +1,12 @@
+@use 'stylesheets/main';
+
+.btn {
+	padding: 16px;
+	@include main.stack {
+		margin-left: 10px;
+	}
+
+	&.open {
+		padding: 14px 24px 14px 32px;
+	}
+}

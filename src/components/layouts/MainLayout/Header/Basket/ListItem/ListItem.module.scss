@@ -1,0 +1,25 @@
+@use 'stylesheets/main';
+
+.list_item {
+	display: grid;
+	grid-template-columns: 24px repeat(4, 32px) repeat(2, 80px) 28px;
+	gap: 24px;
+	padding: 12px 0 11px;
+	border-bottom: 1px solid rgba(main.$color-gray-100, 0.2);
+	color: main.$color-gray-100;
+	align-items: start;
+}
+
+.additive {
+	color: main.$color-red;
+}
+
+.btn {
+	background-color: transparent;
+	border: 1px solid rgba(main.$color-gray-100, 0.2);
+	@include main.flex(center, center);
+	border-radius: 50%;
+	cursor: pointer;
+	width: 28px;
+	height: 28px;
+}

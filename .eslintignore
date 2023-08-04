@@ -1,0 +1,10 @@
+/node_modules/
+/build/
+/public/
+/.git/
+
+.eslintrc.cjs
+vite.config.js
+*.config.js
+
+*.min.*

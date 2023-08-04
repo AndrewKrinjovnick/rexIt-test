@@ -1,0 +1,66 @@
+$h1-font-size: 64px;
+$h1-lint-height: 72px;
+$h1-font-weight: 500;
+$h1-letter-spacing: 1px;
+
+$h2-font-size: 48px;
+$h2-lint-height: 54px;
+$h2-font-weight: 500;
+$h2-letter-spacing: 1px;
+
+$h3-font-size: 28px;
+$h3-lint-height: 36px;
+$h3-font-weight: 400;
+$h3-letter-spacing: 'normal';
+
+$button-font-size: 18px;
+$button-lint-height: 28px;
+$button-font-weight: 400;
+$button-letter-spacing: 1px;
+
+$body-font-size: 18px;
+$body-lint-height: 28px;
+$body-font-weight: 400;
+$body-letter-spacing: 'normal';
+
+$body_small-font-size: 16px;
+$body_small-lint-height: 24px;
+$body_small-font-weight: 400;
+$body_small-letter-spacing: 'normal';
+
+$subtitle-font-size: 10px;
+$subtitle-lint-height: 11.5px;
+$subtitle-font-weight: 400;
+$subtitle-letter-spacing: 'normal';
+
+$menu-font-size: 14px;
+$menu-lint-height: 18px;
+$menu-font-weight: 500;
+$menu-letter-spacing: 1px;
+
+$typography: (
+	'h1': $h1-font-size $h1-lint-height $h1-font-weight $h1-letter-spacing,
+	'h2': $h2-font-size $h2-lint-height $h2-font-weight $h2-letter-spacing,
+	'h3': $h3-font-size $h3-lint-height $h3-font-weight $h3-letter-spacing,
+	'button': $button-font-size $button-lint-height $button-font-weight $button-letter-spacing,
+	'body': $body-font-size $body-lint-height $body-font-weight $body-letter-spacing,
+	'body_small': $body_small-font-size $body_small-lint-height $body_small-font-weight
+		$body_small-letter-spacing,
+	'menu': $menu-font-size $menu-lint-height $menu-font-weight $menu-letter-spacing,
+	'subtitle': $subtitle-font-size $subtitle-lint-height $subtitle-font-weight
+		$subtitle-letter-spacing,
+);
+
+$color-black: #000;
+$color-brown: #e5d3cfcc;
+$color-gray-50: #333333;
+$color-gray-100: #4d4d4d;
+$color-gray-150: #939393;
+$color-green-50: #8bb37dcc;
+$color-green-100: #49743f;
+$color-green-150: #00a651;
+$color-red: #ff4200;
+$color-white: #fff;
+$color-yellow: #aba000;
+
+$z-index-popup: 100;

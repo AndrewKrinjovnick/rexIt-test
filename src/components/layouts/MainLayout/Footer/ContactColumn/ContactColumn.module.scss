@@ -1,0 +1,16 @@
+@use 'stylesheets/main';
+
+.wrapper {
+	@include main.flex(space-between, stretch);
+}
+
+.right_side {
+	margin-left: 16px;
+}
+
+.title {
+	text-transform: uppercase;
+	margin-bottom: 8px;
+	padding: 3px 0;
+	color: main.$color-white;
+}

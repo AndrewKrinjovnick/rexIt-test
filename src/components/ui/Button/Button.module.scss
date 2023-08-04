@@ -1,0 +1,15 @@
+@use 'stylesheets/main';
+
+.btn {
+	border: none;
+	background-color: main.$color-red;
+	border-radius: 90px;
+	padding: 14px 32px;
+	color: main.$color-white;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}

@@ -1,0 +1,47 @@
+@use 'stylesheets/main';
+
+.wrapper {
+	background: no-repeat url('assets/main/header-bg.jpg');
+	position: relative;
+
+	.green_bg {
+		position: absolute;
+		left: 0;
+		top: 170px;
+		height: 360px;
+		width: 940px;
+		background-color: rgba(main.$color-green-50, 0.8);
+	}
+}
+
+.container {
+	@include main.flex(space-between, stretch);
+	padding: 108px 0 286px;
+	position: relative;
+	z-index: 2;
+}
+
+.left_side {
+	padding-right: 23px;
+	margin-bottom: 60px;
+	border-right: 1px solid main.$color-white;
+	margin-top: 12px;
+	@include main.flex(flex-end, center, column);
+	text-align: center;
+
+	.text {
+		color: main.$color-white;
+		max-width: 356px;
+	}
+}
+
+.right_side {
+	@include main.flex(space-between, flex-end, column);
+
+	.title {
+		text-transform: uppercase;
+		max-width: 543px;
+		color: main.$color-white;
+		margin-bottom: 140px;
+	}
+}
